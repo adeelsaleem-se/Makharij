@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".Learning">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -21,6 +22,40 @@
             android:orientation="vertical">
 
             <LinearLayout
+                android:id="@+id/layout10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Makharij # 17"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView5Layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TEMP"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/textView2Layout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mouth empty space while speaking words like  باَ بوُ بىِ"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/layout9"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -31,7 +66,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 9"
+                    android:text="Makharij # 15, 16"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -40,7 +75,7 @@
                     android:id="@+id/textView5Layout9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="TEMP"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -48,28 +83,35 @@
                     android:id="@+id/imageViewLayout9"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_9" />
 
                 <TextView
                     android:id="@+id/textView2Layout9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ف – Tip of the two upper jaw teeth touches the inner part of the lower lip"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView3Layout9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
+                    android:text="ب – Inner part of the both lips touch each other"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView4Layout9"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
+                    android:text="م –  Outer part of both lips touch each other"
                     android:textAlignment="center" />
+
+                <TextView
+                android:id="@+id/textView8Layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="و –  Rounding both lips and not closing the mouth"
+                android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -84,7 +126,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 8"
+                    android:text="Makharij # 14"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -93,7 +135,7 @@
                     android:id="@+id/textView5Layout8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Ghunna"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -101,27 +143,13 @@
                     android:id="@+id/imageViewLayout8"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_8" />
 
                 <TextView
                     android:id="@+id/textView2Layout8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView3Layout8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView4Layout8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
+                    android:text="م ن – While pronouncing the ending sound of these, bring the vibration to the nose"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -137,7 +165,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 7"
+                    android:text="Makharij # 13"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -146,7 +174,7 @@
                     android:id="@+id/textView5Layout7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="TEMP"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -154,27 +182,13 @@
                     android:id="@+id/imageViewLayout7"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_7" />
 
                 <TextView
                     android:id="@+id/textView2Layout7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView3Layout7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView4Layout7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
+                    android:text="ص ز س – Tip of the tongue comes between the front top and bottom teeth"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -190,7 +204,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 6"
+                    android:text="Makharij # 12"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -199,7 +213,7 @@
                     android:id="@+id/textView5Layout6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Lisaveyah"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -207,28 +221,15 @@
                     android:id="@+id/imageViewLayout6"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_6" />
 
                 <TextView
                     android:id="@+id/textView2Layout6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ظ  ذ  ث – Tip of the tongue touching the tip of the frontal 2 teeth"
                     android:textAlignment="center" />
 
-                <TextView
-                    android:id="@+id/textView3Layout6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView4Layout6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
-                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -243,7 +244,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 5"
+                    android:text="Makharij # 11"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -252,7 +253,7 @@
                     android:id="@+id/textView5Layout5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Nit-eeyah"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -260,28 +261,15 @@
                     android:id="@+id/imageViewLayout5"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_5" />
 
                 <TextView
                     android:id="@+id/textView2Layout5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ط د ت – Tip of the tongue touching the base of the front 2 teeth"
                     android:textAlignment="center" />
 
-                <TextView
-                    android:id="@+id/textView3Layout5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView4Layout5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
-                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -296,7 +284,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 4"
+                    android:text="Makharij # 8, 9, 10"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -305,7 +293,7 @@
                     android:id="@+id/textView5Layout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Tarfiyah"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -313,27 +301,27 @@
                     android:id="@+id/imageViewLayout4"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_4" />
 
                 <TextView
                     android:id="@+id/textView2Layout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ل  – Rounded tip of the tongue touching the base of the frontal 8 teeth"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView3Layout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
+                    android:text="ن  – Rounded tip of the tongue touching the base of the frontal 6 teeth"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView4Layout4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
+                    android:text="ر  – Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth"
                     android:textAlignment="center" />
 
             </LinearLayout>
@@ -349,7 +337,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 3"
+                    android:text="Makharij # 6, 7"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -358,7 +346,7 @@
                     android:id="@+id/textView5Layout3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Shajariyah-Haafiyah"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -366,28 +354,22 @@
                     android:id="@+id/imageViewLayout3"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_3" />
 
                 <TextView
                     android:id="@+id/textView2Layout3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ج ش ى – Tongue touching the center of the mouth roof"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView3Layout3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
+                    android:text="ض   – One side of the tongue touching the molar teeth"
                     android:textAlignment="center" />
 
-                <TextView
-                    android:id="@+id/textView4Layout3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
-                    android:textAlignment="center" />
 
             </LinearLayout>
 
@@ -402,7 +384,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:text="Makharij # 1, 2, 3"
+                    android:text="Makharij # 4, 5"
                     android:textAlignment="center"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -411,7 +393,7 @@
                     android:id="@+id/textView5Layout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Halqiyah"
+                    android:text="Lahatiyah"
                     android:textAlignment="center"
                     android:textStyle="bold" />
 
@@ -419,27 +401,20 @@
                     android:id="@+id/imageViewLayout2"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
-                    app:srcCompat="@drawable/img_1" />
+                    app:srcCompat="@drawable/img_2" />
 
                 <TextView
                     android:id="@+id/textView2Layout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="أ ة  –  Sound produced from the End of Throat"
+                    android:text="ق –  Base of Tongue which is near Uvula touching the mouth roof"
                     android:textAlignment="center" />
 
                 <TextView
                     android:id="@+id/textView3Layout2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="ع ح –  Sound produced from the Middle of Throat"
-                    android:textAlignment="center" />
-
-                <TextView
-                    android:id="@+id/textView4Layout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="غ خ – Sound produced from the Start of Throat"
+                    android:text="ك –  Portion of Tongue near its base touching the roof of mouth"
                     android:textAlignment="center" />
 
             </LinearLayout>
