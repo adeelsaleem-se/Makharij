@@ -2,8 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     tools:context=".Learning">
 
     <ScrollView
@@ -75,6 +75,12 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:id="@+id/layout2"
                 android:layout_width="match_parent"
@@ -120,6 +126,12 @@
                     android:textAlignment="center" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
 
             <LinearLayout
                 android:id="@+id/layout3"
@@ -167,6 +179,12 @@
 
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
 
             <LinearLayout
                 android:id="@+id/layout4"
@@ -221,6 +239,12 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:id="@+id/layout5"
                 android:layout_width="match_parent"
@@ -260,6 +284,12 @@
 
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
 
             <LinearLayout
                 android:id="@+id/layout6"
@@ -301,6 +331,12 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:id="@+id/layout7"
                 android:layout_width="match_parent"
@@ -340,6 +376,12 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:id="@+id/layout8"
                 android:layout_width="match_parent"
@@ -378,6 +420,12 @@
                     android:textAlignment="center" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
 
             <LinearLayout
                 android:id="@+id/layout9"
@@ -439,6 +487,12 @@
 
             </LinearLayout>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/black" />
+
             <LinearLayout
                 android:id="@+id/layout10"
                 android:layout_width="match_parent"
@@ -472,6 +526,13 @@
                     android:textAlignment="center" />
 
             </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/black" />
 
         </LinearLayout>
     </ScrollView>
