@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Makharij">
         <activity
+            android:name=".ResultScreen"
+            android:exported="false" />
+        <activity
             android:name=".Quiz"
             android:exported="true">
             <intent-filter>

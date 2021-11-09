@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:lineSpacingMultiplier="1.2"
-                    android:text="textView"
+                    android:text="textView1"
                     android:textSize="18sp"
                     android:textStyle="bold" />
 
@@ -48,31 +48,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="group1"
-                        android:text="1" />
+                        android:text="Halqiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="group1"
-
-                        android:text="2" />
+                        android:text="Lahatiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="group1"
-
-                        android:text="3" />
+                        android:text="Tarfiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton14"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:onClick="group1"
-
-                        android:text="4" />
+                        android:text="Shajariyah-Haafiyah" />
 
                 </RadioGroup>
 
@@ -110,7 +107,7 @@
                         android:onClick="group2"
 
                         android:layout_height="wrap_content"
-                        android:text="1" />
+                        android:text="Halqiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton22"
@@ -118,7 +115,7 @@
                         android:onClick="group2"
 
                         android:layout_height="wrap_content"
-                        android:text="2" />
+                        android:text="Lahatiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton23"
@@ -126,7 +123,7 @@
                         android:onClick="group2"
 
                         android:layout_height="wrap_content"
-                        android:text="3" />
+                        android:text="Tarfiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton24"
@@ -134,7 +131,7 @@
                         android:onClick="group2"
 
                         android:layout_height="wrap_content"
-                        android:text="4" />
+                        android:text="Shajariyah-Haafiyah" />
 
                 </RadioGroup>
 
@@ -172,7 +169,7 @@
                         android:onClick="group3"
 
                         android:layout_height="wrap_content"
-                        android:text="1" />
+                        android:text="Halqiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton32"
@@ -180,7 +177,7 @@
                         android:onClick="group3"
 
                         android:layout_height="wrap_content"
-                        android:text="2" />
+                        android:text="Lahatiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton33"
@@ -188,7 +185,7 @@
                         android:onClick="group3"
 
                         android:layout_height="wrap_content"
-                        android:text="3" />
+                        android:text="Tarfiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton34"
@@ -196,7 +193,7 @@
                         android:onClick="group3"
 
                         android:layout_height="wrap_content"
-                        android:text="4" />
+                        android:text="Shajariyah-Haafiyah" />
 
                 </RadioGroup>
 
@@ -234,7 +231,7 @@
                         android:onClick="group4"
 
                         android:layout_height="wrap_content"
-                        android:text="1" />
+                        android:text="Halqiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton42"
@@ -242,7 +239,7 @@
                         android:onClick="group4"
 
                         android:layout_height="wrap_content"
-                        android:text="2" />
+                        android:text="Lahatiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton43"
@@ -250,7 +247,7 @@
                         android:onClick="group4"
 
                         android:layout_height="wrap_content"
-                        android:text="3" />
+                        android:text="Tarfiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton44"
@@ -258,7 +255,7 @@
                         android:onClick="group4"
 
                         android:layout_height="wrap_content"
-                        android:text="4" />
+                        android:text="Shajariyah-Haafiyah" />
 
                 </RadioGroup>
 
@@ -296,7 +293,7 @@
                         android:layout_height="wrap_content"
                         android:onClick="group5"
 
-                        android:text="1" />
+                        android:text="Halqiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton52"
@@ -304,7 +301,7 @@
                         android:onClick="group5"
 
                         android:layout_height="wrap_content"
-                        android:text="2" />
+                        android:text="Lahatiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton53"
@@ -312,7 +309,7 @@
                         android:onClick="group5"
 
                         android:layout_height="wrap_content"
-                        android:text="3" />
+                        android:text="Tarfiyah" />
 
                     <RadioButton
                         android:id="@+id/radioButton54"
@@ -320,7 +317,7 @@
                         android:onClick="group5"
 
                         android:layout_height="wrap_content"
-                        android:text="4" />
+                        android:text="Shajariyah-Haafiyah" />
 
                 </RadioGroup>
 

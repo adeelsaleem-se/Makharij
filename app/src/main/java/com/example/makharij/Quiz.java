@@ -2,28 +2,91 @@ package com.example.makharij;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class Quiz extends AppCompatActivity {
 
-    String[] answers = {"a", "a", "a", "a", "a"};
+    String[] answers = {"", "", "", "", ""};
+    int[] questionsNumbers = {-1, -1, -1, -1, -1};
+    TextView txt1;
+    TextView txt2;
+    TextView txt3;
+    TextView txt4;
+    TextView txt5;
+
+    String[][] data = {
+            {"أ ہ","Halqiyah"},
+            {"ع ح", "Halqiyah"},
+            {"غ خ", "Halqiyah"},
+            {"ق", "Lahatiyah"},
+            {"ک", "Lahatiyah"},
+            {"ج ش ى", "Shajariyah-Haafiyah"},
+            {"ض", "Shajariyah-Haafiyah"},
+            {"ل", "Tarfiyah"},
+            {"ن", "Tarfiyah"},
+            {"ر", "Tarfiyah"},
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
+
+        String question = " these arabic words are:";
+
+        txt1 = findViewById(R.id.question1);
+        txt2 = findViewById(R.id.question2);
+        txt3 = findViewById(R.id.question3);
+        txt4 = findViewById(R.id.question4);
+        txt5 = findViewById(R.id.question5);
+
+        int temp;
+        Random rand = new Random(10);
+
+        temp = rand.nextInt(10);
+        questionsNumbers[0] = temp;
+        txt1.setText(data[temp][0] + question);
+
+        temp = rand.nextInt(10);
+        questionsNumbers[0] = temp;
+        txt2.setText(data[temp][0] + question);
+
+        temp = rand.nextInt(10);
+        questionsNumbers[0] = temp;
+        txt3.setText(data[temp][0] + question);
+
+        temp = rand.nextInt(10);
+        questionsNumbers[0] = temp;
+        txt4.setText(data[temp][0] + question);
+
+        temp = rand.nextInt(10);
+        questionsNumbers[0] = temp;
+        txt5.setText(data[temp][0] + question);
+
+
     }
 
     public void submit(View view) {
 
+        int score=0;
+        for(int i=0; i<5; i++)
+            if (answers[i].equals(data[questionsNumbers[i]][0]))
+                score++;
 
+        // starting background task to update product
+        Intent fp=new Intent(getApplicationContext(),ResultScreen.class);
+        fp.putExtra("score", score);
+        startActivity(fp);
 
     }
 
