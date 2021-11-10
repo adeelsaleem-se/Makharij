@@ -43,17 +43,22 @@ public class Quiz extends AppCompatActivity {
 
         Random rand = new Random();
 
-        boolean found = false;
+        boolean found = true;
         int searchedValue = -1;
 
-        while (!found){
+        while (found){
             searchedValue = rand.nextInt(10);
             for(int x : questionsNumbers){
                 if(x == searchedValue){
-                    found = true;
+                    found = false;
                     break;
                 }
             }
+            if(found == true){
+                break;
+            }
+            else
+                found = true;
         }
 
         return searchedValue;
@@ -73,6 +78,7 @@ public class Quiz extends AppCompatActivity {
         txt5 = findViewById(R.id.question5);
 
         int temp;
+
         temp = returnRandomInt();
         questionsNumbers[0] = temp;
         txt1.setText(data[temp][0] + question);
@@ -93,7 +99,6 @@ public class Quiz extends AppCompatActivity {
         questionsNumbers[4] = temp;
         txt5.setText(data[temp][0] + question);
 
-
     }
 
     public void submit(View view) {
@@ -107,7 +112,7 @@ public class Quiz extends AppCompatActivity {
         }
 
         // starting background task to update product
-        Intent fp=new Intent(Quiz.this, ResultScreen.class);
+        Intent fp=new Intent(getApplicationContext(), ResultScreen.class);
         fp.putExtra("score", String.valueOf(score));
         startActivity(fp);
 
