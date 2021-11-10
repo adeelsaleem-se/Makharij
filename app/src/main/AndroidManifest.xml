@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Makharij">
         <activity
             android:name=".ResultScreen"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Quiz"
             android:exported="true">

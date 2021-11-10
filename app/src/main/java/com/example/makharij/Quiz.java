@@ -11,8 +11,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.IntStream;
 
 public class Quiz extends AppCompatActivity {
 
@@ -37,12 +39,32 @@ public class Quiz extends AppCompatActivity {
             {"ر", "Tarfiyah"},
     };
 
+    public int returnRandomInt(){
+
+        Random rand = new Random();
+
+        boolean found = false;
+        int searchedValue = -1;
+
+        while (!found){
+            searchedValue = rand.nextInt(10);
+            for(int x : questionsNumbers){
+                if(x == searchedValue){
+                    found = true;
+                    break;
+                }
+            }
+        }
+
+        return searchedValue;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz);
 
-        String question = " these arabic words are:";
+        String question = " these arabic words are: ";
 
         txt1 = findViewById(R.id.question1);
         txt2 = findViewById(R.id.question2);
@@ -51,25 +73,23 @@ public class Quiz extends AppCompatActivity {
         txt5 = findViewById(R.id.question5);
 
         int temp;
-        Random rand = new Random(10);
-
-        temp = rand.nextInt(10);
+        temp = returnRandomInt();
         questionsNumbers[0] = temp;
         txt1.setText(data[temp][0] + question);
 
-        temp = rand.nextInt(10);
+        temp = returnRandomInt();
         questionsNumbers[1] = temp;
         txt2.setText(data[temp][0] + question);
 
-        temp = rand.nextInt(10);
+        temp = returnRandomInt();
         questionsNumbers[2] = temp;
         txt3.setText(data[temp][0] + question);
 
-        temp = rand.nextInt(10);
+        temp = returnRandomInt();
         questionsNumbers[3] = temp;
         txt4.setText(data[temp][0] + question);
 
-        temp = rand.nextInt(10);
+        temp = returnRandomInt();
         questionsNumbers[4] = temp;
         txt5.setText(data[temp][0] + question);
 
@@ -79,13 +99,16 @@ public class Quiz extends AppCompatActivity {
     public void submit(View view) {
 
         int score=0;
-        for(int i=0; i<5; i++)
-            if (answers[i].equals(data[questionsNumbers[i]][0]))
+        String temp = "";
+        for(int i=0; i<5; i++) {
+            temp = data[questionsNumbers[i]][1];
+            if (answers[i].equals(temp))
                 score++;
+        }
 
         // starting background task to update product
-        Intent fp=new Intent(getApplicationContext(), ResultScreen.class);
-        fp.putExtra("score", score);
+        Intent fp=new Intent(Quiz.this, ResultScreen.class);
+        fp.putExtra("score", String.valueOf(score));
         startActivity(fp);
 
     }
