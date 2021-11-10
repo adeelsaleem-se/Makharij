@@ -58,19 +58,19 @@ public class Quiz extends AppCompatActivity {
         txt1.setText(data[temp][0] + question);
 
         temp = rand.nextInt(10);
-        questionsNumbers[0] = temp;
+        questionsNumbers[1] = temp;
         txt2.setText(data[temp][0] + question);
 
         temp = rand.nextInt(10);
-        questionsNumbers[0] = temp;
+        questionsNumbers[2] = temp;
         txt3.setText(data[temp][0] + question);
 
         temp = rand.nextInt(10);
-        questionsNumbers[0] = temp;
+        questionsNumbers[3] = temp;
         txt4.setText(data[temp][0] + question);
 
         temp = rand.nextInt(10);
-        questionsNumbers[0] = temp;
+        questionsNumbers[4] = temp;
         txt5.setText(data[temp][0] + question);
 
 
@@ -84,7 +84,7 @@ public class Quiz extends AppCompatActivity {
                 score++;
 
         // starting background task to update product
-        Intent fp=new Intent(getApplicationContext(),ResultScreen.class);
+        Intent fp=new Intent(getApplicationContext(), ResultScreen.class);
         fp.putExtra("score", score);
         startActivity(fp);
 
