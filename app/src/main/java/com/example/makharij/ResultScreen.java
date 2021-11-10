@@ -18,7 +18,7 @@ public class ResultScreen extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        txt.setText("Score " + intent.getStringExtra("score") + "out of 5!");
+        txt.setText("Score " + intent.getStringExtra("value") + "out of 5!");
     }
 
     public void share(View view) {
