@@ -112,7 +112,7 @@ public class Quiz extends AppCompatActivity {
 
         // starting background task to update product
         Intent intent=new Intent(Quiz.this, ResultScreen.class);
-        intent.putExtra("keyName", String.valueOf(score));  // removes this line make no exception :(
+        intent.putExtra("value", String.valueOf(score));  // removes this line make no exception :(
         startActivity(intent);
 
     }

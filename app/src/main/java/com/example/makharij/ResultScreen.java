@@ -14,11 +14,11 @@ public class ResultScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result_screen);
-        txt.findViewById(R.id.textView);
+        txt=findViewById(R.id.textView6);
 
         Intent intent = getIntent();
 
-        txt.setText("Score " + intent.getStringExtra("value") + "out of 5!");
+        txt.setText("Score " + intent.getStringExtra("value") + " out of 5!");
     }
 
     public void share(View view) {
